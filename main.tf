@@ -1,7 +1,9 @@
-provider "aws" {
-  profile                 = "terraform"
-  shared_credentials_file = "~/.aws/credentials"
-  region  = var.region
+required_providers {
+  
+aws = {
+source  = “hashicorp/aws”
+version = “>= v1.2.4”
+region  = var.region
 }
 
 
