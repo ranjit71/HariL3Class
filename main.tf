@@ -1,5 +1,7 @@
-provider "aws" {
-  region  = var.region
+provider "aws" {    
+    region = "us-east-1"
+    version = "~> 2.4"
+    profile = "default"
 }
 
 
