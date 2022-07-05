@@ -1,7 +1,5 @@
-provider "aws" {    
-    region = "us-east-1"
-    version = "~> 2.4"
-    profile = "terraform"
+provider "aws" {
+  region  = var.region
 }
 
 
