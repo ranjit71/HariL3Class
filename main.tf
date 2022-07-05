@@ -1,8 +1,5 @@
 provider "aws" {
-      
-     source  = "hashicorp/aws"
-     version = "v1.2.4"
-     region  = var.region
+  region  = var.region
 }
 
 
