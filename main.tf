@@ -1,6 +1,6 @@
     provider "aws" {
       profile                 = "terraform"
-      shared_credentials_files = ["./.aws/credentials"]
+      shared_credentials_files = ["/root/.aws/credentials"]
       region                  = "us-east-1"
     }
 
