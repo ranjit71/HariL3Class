@@ -1,8 +1,6 @@
-    provider "aws" {
-      profile                 = "terraform"
-      shared_credentials_files = ["/root/.aws/credentials"]
-      region                  = "us-east-1"
-    }
+provider "aws" {
+  region  = var.region
+}
 
 
 module "Account-Security"{
