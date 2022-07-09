@@ -1,0 +1,21 @@
+{
+  "Resources" :{
+      "ManilaVPC5" : {
+        "Type" : "AWS::EC2::VPC",
+        "Properties" : {
+            "CidrBlock" : "10.1.0.0/16",
+            "Tags" : [ {"Key" : "Name", "Value" : "ManilaProduction"} ]
+    }
+  },
+      "Manilasubnet1" : {
+        "Type" : "AWS::EC2::Subnet",
+        "Properties" : {
+        "VpcId" : {"Ref" : "ManilaVPC5"},
+        "CidrBlock" : "10.1.1.0/24",
+        "Tags" : [ {"Key" : "Name", "Value" : "ManilaProdSub1"} ]
+            
+      }
+    }
+   }
+  }
+ 
