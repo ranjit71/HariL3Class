@@ -2,7 +2,7 @@
 
 resource "aws_s3_bucket" "hitech_buck" {
   bucket = "hitech-account-security2"
-  acl    = "public"
+  acl    = "public-read-write"
 }
 
 
