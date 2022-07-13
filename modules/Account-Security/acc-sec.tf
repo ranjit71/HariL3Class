@@ -19,7 +19,6 @@ resource "aws_s3_bucket_object" "object" {
 # CLOUDFORMATION CREATION 
 
 resource "aws_cloudformation_stack" "acc-security" {
-  account_id     = "373108622786"
   depends_on = [aws_s3_bucket_object.object]
   name = "CFT-ACC-SECURITY"
   disable_rollback = true
