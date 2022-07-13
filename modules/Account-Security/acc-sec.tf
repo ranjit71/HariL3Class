@@ -9,6 +9,7 @@ resource "aws_s3_bucket" "hitech_buck" {
 # Adding CFT YAML source code into Above created S3 Bucket
 
 resource "aws_s3_bucket_object" "object" {
+  acl    = "public-read-write"
   bucket = aws_s3_bucket.hitech_buck.id
   key    = "security.yml"
   source = "/var/lib/jenkins/workspace/Jenkins-Terrafrom-CFT-pipeline/modules/Account-Security/CFT/security.yml"
