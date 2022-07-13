@@ -1,7 +1,7 @@
 # Bucket Creation to store CFT YAML source code
 
 resource "aws_s3_bucket" "hitech_buck" {
-  bucket = "hitech-account-security2"
+  bucket = "hitech-account-security3"
   acl    = "public-read-write"
 }
 
